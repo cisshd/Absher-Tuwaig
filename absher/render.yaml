@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: absher-api
+    runtime: python
+    plan: free
+    buildCommand: python -m pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      PYTHON_VERSION: 3.10
+
+  - type: web
+    name: absher-dashboard
+    runtime: python
+    plan: free
+    buildCommand: python -m pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: streamlit run dash_app.py --server.port=$PORT --server.address=0.0.0.0
+    envVars:
+      PYTHON_VERSION: 3.10
