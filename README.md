@@ -1,23 +1,32 @@
-## GOVAi - منصة أبشر: نظام التنبؤ الأمني
+## GOVAi – Absher Platform: Security Prediction System
+## Overview
 
-## نظرة عامة
+We participated in the Absher Road Hackathon with the GOVAi – Absher Platform project, where we developed a security prediction system that analyzes user behavior data, detects unusual activities, and classifies risk levels.
 
-شاركنا في هاكاثون أبشر طريق بمشروع GOVAi - منصة أبشر، حيث طورنا نظامًا للتنبؤ الأمني يعتمد على تحليل بيانات سلوك المستخدمين واكتشاف الأنشطة غير الاعتيادية وتصنيف مستوى الخطورة.
+The project began by creating simulated data representing user behaviors, then converting these behaviors into numeric features suitable for analysis, and training a machine learning model capable of accurately predicting potential risks.
 
-بدأ المشروع بإنشاء بيانات محاكاة تمثل سلوك المستخدمين، ثم تحويل هذه السلوكيات إلى خصائص رقمية قابلة للتحليل، وتدريب نموذج تعلم آلي يمكنه التنبؤ بالمخاطر المحتملة بشكل دقيق.
+The model was connected to an API and a display interface to facilitate practical testing and viewing results in real time, making the system usable in real-world scenarios.
 
-تم ربط النموذج بواجهة API وواجهة عرض لتسهيل اختبار الحل عمليًا ومشاهدة النتائج مباشرة، مما يجعل النظام قابلًا للاستخدام في سيناريوهات واقعية.
+## Features
 
-## المميزات
-	•	إنشاء بيانات محاكاة لسلوك المستخدمين لأغراض التدريب والتحليل.
-	•	تحويل البيانات إلى خصائص رقمية قابلة للتحليل بواسطة التعلم الآلي.
-	•	تدريب نموذج للتنبؤ بالأنشطة غير الاعتيادية وتصنيف مستوى الخطورة.
-	•	ربط النموذج بواجهة API لتسهيل التكامل مع أنظمة أخرى.
-	•	واجهة عرض تفاعلية لاختبار النموذج ومتابعة النتائج مباشرة.
+Generating simulated user behavior data for training and analysis purposes.
 
-## التقنيات المستخدمة
-	•	Python
-	•	Pandas، NumPy (معالجة البيانات)
-	•	Scikit-learn / TensorFlow / PyTorch (النموذج)
-	•	FastAPI / Flask (واجهة API)
-	•	Streamlit / React / Dash (واجهة العرض)
+Converting data into numeric features suitable for machine learning analysis.
+
+Training a model to predict unusual activities and classify risk levels.
+
+Connecting the model to an API to enable integration with other systems.
+
+Interactive display interface to test the model and monitor results directly.
+
+## Technologies Used
+
+Python
+
+Pandas, NumPy (data processing)
+
+Scikit-learn / TensorFlow / PyTorch (modeling)
+
+FastAPI / Flask (API interface)
+
+Streamlit / React / Dash (display interface)
